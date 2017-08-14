@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>asd</title>
+	<script>
+	 function hua(num){
+	 	if (num<=1) {
+	 		return 1;
+	 	}else{
+	 		return num*arguments.callee(num-1);
+	 	}
+	 };
+	alert(hua(4))
+
+	</script>
+	
+</head>
+<body>
+		<ul>
+			<li><button>开启</button><button>关闭</button></li>
+			<li><button>开启</button><button>关闭</button></li>
+			<li><button>开启</button><button>关闭</button></li>
+			<li><button>开启</button><button>关闭</button></li>
+		</ul>
+</body>	
+</html>
