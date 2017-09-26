@@ -1,4 +1,17 @@
 $(function(){
+  //滚动触发函数scroll
+  $(window).scroll(function(){
+    var f=1000;
+    //取最小值函数math.min 
+    var m=Math.min(document.documentElement.scrollTop||
+      document.body.scrollTop,f)/f;
+    $(".header").css("background","rgba(0,0,0,"+m+")")
+
+
+  })
+ 
+
+
 	$(".htabs").tabs( );
   var vm=new Vue({
   	el:".hvue",

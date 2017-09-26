@@ -13,6 +13,8 @@
 	<script src="vue.js"></script>
 </head>
 <body style="background:#ff6666">
+
+	<div class="header"> </div>
 	
 	<div style="display:none">
 	<img src="http://static01.lvye.com/forum/201410/28/204421krbzrv7grr0220qr.jpg">
@@ -72,6 +74,7 @@
 						<hr><!-- 分割线 -->
 						
 						background:linear-gradient(to left top,rgb(),rgb())//渐变阴影 ;<br>
+						background:linear-gradient(90deg, #000 10%,#000 50%,#000);<br>
 						background:url() no-repeat top center; 图片居顶 居中；
 						<h2>javascript javascript javascript javascript javascript javascript javascript javascript javascript ;</h2><br>
 						<del>canvasHTML5新标签用于创建自定义图形</del>
@@ -133,8 +136,80 @@
 
 			<div id="hcss">
 				<div class="flex box"><!-- css3盒模型 -->
+					<h2>弹性布局</h2>
+					布局是css的一个重点;传统布局主要依赖display+position+float; <br>
+					新的布局采用flex布局(flexible box意为弹性布局) <br>
+					<ul class="ul">
+							<li>flex-direction</li>
+							<li>flex-wrap</li>
+							<li>flex-flow</li>
+							<li>justify-content</li>
+							<li>align-items</li>
+							<li>align-content</li>
+						</ul>	
+						决定主轴方向 flex-direction: 
+						<span style="color: #999">
+						row 默认值水平向右 |
+						 row-reverse 水平向左| 
+						 column 垂直向下| 
+						  column-reverse垂直向上
+						</span>	<br>
+
+						换行 flex-wrap: <span style="color: #999">
+						nowrap 不换行 | wrap 换行 | 围绕-severse |  column-reverse
+						</span>	 <br>	
+
+						前两者简写 flex-flow:
+						 <span style="color: #999">
+						< flex-derection >||< flex-wrap >
+						</span>	 <br>
+
+						主轴对齐 justify-content: <span style="color: #999">
+						flex-start（默认值）左对齐 |
+					   flex-end 右对齐 | 
+					    center 居中|
+					    space-between 两端对齐|
+					    space-around 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的大一倍|
+					    space-evenly 每个项目两侧.与边框的间隔相等
+						</span>	 <br>
+
+						交叉轴对齐 align-itmes: 
+						<span style="color: #999">
+						flex-start 上对齐 | flex-end 下对齐 | 
+						center  中点对齐 | 
+						 baseline 项目的第一行文字的基线对齐|
+						 stretch（默认值） 项目未设置高度或设为auto，将占满整个容器的高度
+						</span>	
+					<hr>
 					<h2>CSS</h2>
-					vertical-align:text-top; 元素的垂直对齐；
+					vertical-align:text-top; 元素的垂直对齐；<br>
+					图片伪截切；将图片设为背景
+					《div style="width:100px;height:100px;background:url()no-repeat top center;background-size:cover/200%"》
+					<br><br><br>
+					<ul class="load">
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li>
+				 
+		 
+					</ul>
 					<h2>CSS3盒模型</h2>
 						<b>百分比元素居中</b><br>
 						   在HTML和body中设置宽高，
@@ -388,6 +463,13 @@
 					POST向指定的资环提交要处理的数据（也可用于从服务器获取数据	，不会缓存数据）
 
 					$.get(URL,callback);
+					<hr>
+					<h2>jquery对象与dom对象</h2>
+					juqery对象与dom对象不一样；需要转换 <br>
+					on事件委托与直接捆绑的区别：<br>
+					on方法性能更好，可以防止事件冒泡，为动态添加的元素也能绑上事件。<br>
+					官方推荐：尽量使用on绑定事件。<span>在使用on时，on前面的元素必须在页面加载的时候存在于dom中，动态元素可以放在on的第二个参数之中.on("click","p",function(){})</span>		
+
 
 
 
