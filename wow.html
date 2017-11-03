@@ -26,8 +26,8 @@
 <div id="box">
 	<div class="sbox">
 		<div class="boxtop">致死</div>
-		<div class="boxbottom">火球</div>
-		<div class="boxleft">风怒</div>
+		<div class="boxbottom">潜行</div>
+		<div class="boxleft">撕咬</div>
 		<div class="boxright">闷棍</div>
 		<div class="boxfornt">烧燃</div>
 		<div class="boxend">奉献</div>
@@ -45,6 +45,7 @@
 				<li><a href="#hangularjs">ANGULARJS</a></li>
 				<li><a href="#hvue">VUE</a></li>
 				<li><a href="#hsvg">SVG</a></li>
+				<li><a href="#hwow">WOW</a></li>
 			
 			</ul>
 
@@ -687,6 +688,41 @@
 								</div>								
 					</div>
 			</div>
+			<div id="hwow" style="height: 50rem;">
+				<ul style="list-style: none;color: #999;float:left;width: 25rem">
+					<li style="color: #666;font-size: 2rem">德鲁伊</li>
+					<li style="color: #FF6666">月火猫2/4</li>
+					<li style="color: #FF6666">咕咕猫1/4</li>
+					<li>狂野猫0/4</li>
+					<li>残暴猫0/4</li>
+					<hr>	
+					<li style="color: #666;font-size: 2rem">DH</li>
+					<li>斩炎0/1</li>
+					<li>职业坐骑0/1</li>
+					<li>角斗士幻化0/1</li>
+					<hr>
+					
+					<li style="color: #666;font-size: 2rem">战士</li>
+					<li>斯多姆卡0/1</li>
+					<li>高阶督军0/1</li>
+					<li>1750／2000</li>					
+				</ul>
+				<ul style="list-style: none;color: #999">
+					<li style="color: #666;font-size: 2rem">坐骑</li>
+					<li style="color: #FF6666">无头1/1</li>
+					<li>火鹰0/1</li>
+					<li style="color: #FF6666">无敌1/1</li>					
+					
+					<li>飞机头0/1</li>
+					<li>暗月飞艇0/1</li>
+					<li>魔钢0/1</li>
+					
+					<li></li>
+					<li></li>
+				 	
+				</ul>			
+
+			</div>
 	
 
 	</div>
@@ -712,9 +748,41 @@
 
 
 
+  <script>  
+    var addRippleEffect = function (e) {  
+        //声明target 等于鼠标节点    
+        var target = e.target;  
+        if (target.className.toLowerCase() !== 'btn') return false; 
+
+        //声明rect 等于button的大小及位置 
+        var rect = target.getBoundingClientRect();  
+
+        //声明ripple 等于按钮 获取class为ripple  ripple=btn.span  
+        var ripple = target.querySelector('.ripple');  
+
+        //如果ripple不存在 button后面建立span
+        if (!ripple) {  
+            ripple = document.createElement('span');  
+            ripple.className = 'ripple'  
+            ripple.style.height = ripple.style.width = Math.max(rect.width, rect.height) + 'px'  
+            target.appendChild(ripple);  
+        }  
+         ripple.classList.remove('show');  
+               //鼠标的y坐标-按钮的顶部-
+        var top = e.pageY - rect.top - ripple.offsetHeight / 2 - document.body.scrollTop;  
+        var left = e.pageX - rect.left - ripple.offsetWidth / 2 - document.body.scrollLeft;  
+        //绝对定位
+        ripple.style.top = top + 'px'  
+        ripple.style.left = left + 'px'  
+        ripple.classList.add('show');  
+        return false;  
+
+    }  
+    document.addEventListener('click', addRippleEffect, false);  
+ 
 
 
-
+    </script> 
 
 
 
