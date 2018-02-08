@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>wow</title>
 	<link rel="stylesheet" href="jquery-ui.css">
-	<link rel="stylesheet" href="wow.css">
 	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="wow.css">
 	<script  src="jquery.js"></script>
 	<script  src="jquery-ui.js"></script>
 	<script  src="bootstrap.min.js"></script>
@@ -13,11 +14,11 @@
 	<script src="vue.js"></script>
 	<script src="snap.svg-min.js""></script>	
 </head>
-<body style="background:#ff6666">
+<body style="background:#018172">
 
 	<div class="header"> </div>
 	<div class="h1" style="width:100%;font-size: 14rem; position: absolute;top:10%;left:50%; transform:translateX(-50%); color: #555;text-align: center">For the horde</div>
-	 <!-- <body style="background:#000"> -->
+ 
 <div id="bg">
 	<svg version="1.1" id="crocodile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="312px" height="300px" viewBox="0 0 260 250" enable-background="new 0 0 260 250" xml:space="preserve">
             <g>
@@ -135,34 +136,46 @@
 
 			<div id="hhtml">
 					<div class="horde">
+						<h3>我也不知道是啥</h3>
 
-					<abbr title="缩略语">abbr</abbr><br>
-
-
-					<a href="http://www.baidu.com" 
-					onclick="return true">baidu</a>
+						<hr>
+						<xmp><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"></xmp>
+						<xmp><a href="http://www.baidu.com" onclick="return fasle">百度一下</a>	=>//return Boolean</xmp>
+						<xmp>font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;	
+color: #34495e;</xmp>	
+ 						 
 						window是只浏览器对象，JS中的点击作用域，一切方法和属性都是这个对象的子集；<br>
 						document文档或对象，是window的子集。
 						<br>
-						<b>怪异模式-<span>混乱模式</span> 和 标准模式-<span>严格模式</span></b><br>
-						没有《！doctype html》文档申明浏览器会用老版本的浏览器使用规则来渲染页面；有则以W3C标准
+						
+					 <xmp>无<!DOCTYPE html>文档申明浏览器会用老版本的浏览器使用规则来渲染页面；有则以W3C标准</xmp> 
 						<br>
+						<b>怪异模式=<span>混乱模式</span> 和 标准模式=<span>严格模式</span></b> 
 						<b>区别：</b> <br>
-						<b>盒模型-</b>怪异模式盒模型=IE盒模型；<span>width="content+paddingLeft+paddingRight+borderLeft+borderRight"</span><br>标准模式盒模型；<span>width=content</span>
+						<b>盒模型-</b>怪异模式盒模型=IE盒模型:<span>width="content+padding+border"</span><br>标准模式盒模型:<span>width=content</span>
+ 
+			<!-- ---------------------- -->
 
-
-
-
+						<h3>要么为部落效忠 要么被部落碾碎</h3>
 						<hr>
 						<b>外边距合并 竖向取最大值，横向相加</b><br>
-						<del>sublime一行点击三次可直接复制粘贴</del>
-						<hr><!-- 分割线 -->
+						<br> <b>响应式</b>
+						<br>当页面长度设为100%自适应时，缩小网页会产生空白所以min-width：1263px；最小长度。
+						<br> 
+						
 						
 						background:linear-gradient(to left top,rgb(),rgb())//渐变阴影 ;<br>
-						background:linear-gradient(90deg, #000 10%,#000 50%,#000);<br>
+						background:linear-gradient(45deg, #000 10%,#000 50%,#000);<br>
 						background:url() no-repeat top center; 图片居顶 居中；
-						<h2> for the horde</h2><br>
-						<del>canvasHTML5新标签用于创建自定义图形</del>
+
+						<h3>块级元素和内联元素（inline行内元素）</h3>
+						<hr>
+						div是块级元素，默认排序方式是换行排序；<br>
+						span是内联元素，默认是同行排序 直到超出容器宽度则自动换行。<span><br>内联元素可通过displayblock装转换为块级元素</span>
+						<span>（a ; img ; span ; small ; ） 其中input是内联块 元素既可以设置长宽又可以放在同一行</span>
+	 
+						<abbr title="缩略语">abbr</abbr><br>		
+					 
 
 						
 						
@@ -202,72 +215,59 @@
 					</div>
 					
 
-					<br> <b>响应式</b>
-					<br>当页面长度设为100%自适应时，缩小网页会产生空白所以min-width：1263px；最小长度。
-					<br> 
-
-					<h2>块级元素和内联元素（inline行内元素）</h2>
-					div是块级元素，在没有任何属性布局时，默认排序方式是换行排序；<br>
-					span是内联元素，在没有任何属性布局时，默认是同行排序 直到超出容器宽度则自动换行。<span>内联元素可通过displayblock装转换为块级元素</span><br>
-					<span>（a ; img ; span ; small ; ） 其中input是内联块 元素既可以设置长宽又可以放在同一行</span>
-
-
-
-
-
-						
+					 
+					
 
 			</div>
 
 			<div id="hcss">
 				<div class="flex box"><!-- css3盒模型 -->
-					<h2>弹性布局</h2>
+					<h3>还是不知道是啥</h3>
+					<hr>
+					<xmp>h3:first-child{} 	=>h3父元素的第一个子元素(h3)</xmp>	
+					<h3>弹性布局</h3>	 
+					<hr>	
 					布局是css的一个重点;传统布局主要依赖display+position+float; <br>
 					新的布局采用flex布局(flexible box意为弹性布局) <br>
 					<ul class="ul">
-							<li>flex-direction</li>
-							<li>flex-wrap</li>
-							<li>flex-flow</li>
-							<li>justify-content</li>
-							<li>align-items</li>
+							<li>决定主轴方向 flex-direction: 
+								<span>
+								row 默认值水平向右 |row-reverse 水平向左| column 垂直向下| column-reverse垂直向上
+								</span>	
+							</li>
+							<li>换行 flex-wrap: 
+								<span>
+								nowrap 不换行 | wrap 换行 | 围绕-severse |  column-reverse
+								</span>	  
+							</li>
+							<li>前两者简写 flex-flow:
+								<span>
+								< flex-derection >||< flex-wrap >
+								</span>	 
+							</li>
+							<li>主轴对齐 justify-content: 
+								<span>
+								flex-start（默认值）左对齐 |flex-end 右对齐 | center 居中|
+							    space-between 两端对齐|space-around 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的大一倍|
+							    space-evenly 每个项目两侧.与边框的间隔相等
+								</span>	 
+							</li>
+							<li>交叉轴对齐 align-itmes: 
+								<span>
+								flex-start 上对齐 | flex-end 下对齐 | center  中点对齐 | 
+								 baseline 项目的第一行文字的基线对齐|
+								 stretch（默认值） 项目未设置高度或设为auto，将占满整个容器的高度
+								</span>	
+							</li>
 							<li>align-content</li>
 						</ul>	
-						决定主轴方向 flex-direction: 
-						<span style="color: #999">
-						row 默认值水平向右 |
-						 row-reverse 水平向左| 
-						 column 垂直向下| 
-						  column-reverse垂直向上
-						</span>	<br>
-
-						换行 flex-wrap: <span style="color: #999">
-						nowrap 不换行 | wrap 换行 | 围绕-severse |  column-reverse
-						</span>	 <br>	
-
-						前两者简写 flex-flow:
-						 <span style="color: #999">
-						< flex-derection >||< flex-wrap >
-						</span>	 <br>
-
-						主轴对齐 justify-content: <span style="color: #999">
-						flex-start（默认值）左对齐 |
-					   flex-end 右对齐 | 
-					    center 居中|
-					    space-between 两端对齐|
-					    space-around 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的大一倍|
-					    space-evenly 每个项目两侧.与边框的间隔相等
-						</span>	 <br>
-
-						交叉轴对齐 align-itmes: 
-						<span style="color: #999">
-						flex-start 上对齐 | flex-end 下对齐 | 
-						center  中点对齐 | 
-						 baseline 项目的第一行文字的基线对齐|
-						 stretch（默认值） 项目未设置高度或设为auto，将占满整个容器的高度
-						</span>	
+						 
+						 
+					 
+					<h3>CSS</h3>
 					<hr>
-					<h2>CSS</h2>
 					vertical-align:text-top; 元素的垂直对齐；<br>
+					text-align:center; 元素水平对齐<br>
 					图片伪截切；将图片设为背景
 					《div style="width:100px;height:100px;background:url()no-repeat top center;background-size:cover/200%"》
 					<br><br><br>
@@ -300,7 +300,8 @@
 					<br>
 					<div class="bordercolor"></div>
 					<br>
-					<h2>CSS3盒模型</h2>
+					<h3>CSS3盒模型</h3>
+					<hr>	
 						<b>百分比元素居中</b><br>
 						   在HTML和body中设置宽高，
 						   position:fixed; top:50%; left:50%;
@@ -343,7 +344,8 @@
 						<div style="border:1px solid red;height:100px;flex:100px"></div>
 				    </div>
 				</div>
-				<h2>伪类</h2>
+				<h3>伪类</h3>
+				<hr>
 					<div class="after">
 						:hover； <br>
 						:first-child； <br>
@@ -353,7 +355,8 @@
 						<br>
 						
 						
-						<h2>CSS3</h2>
+						<h3>CSS3</h3>
+						<hr>
 						<b>边框</b><br>	
 						<p>border-radius (border-top-left-radius;border-bottom-left-radius;)</p>
 						<p>border-image</p>
@@ -376,15 +379,16 @@
 						transition:width 2s,hieght 2s;<span>不写在：hover里</span><br><br>
 						dl{clear：left};dd,dt{float:left};
 						<p>box-sizing:border-box;<span>border和padding包含在width里面(怪异模式)</span></p>
-						<h2>form表单里的所有input建议使用box-sizing(兼容IE8)</h2>
+						<h3>form表单里的所有input建议使用box-sizing(兼容IE8)</h3>
 						<hr>
-						<h2>display:flex 弹性布局(兼容IE11)</h2>
+						<h3>display:flex 弹性布局(兼容IE11)</h3>
 						<hr>
-						<h2>媒体查询</h2>
+						<h3>媒体查询</h3>
 						<hr>
 						pointer-events：none；（鼠标穿透）
 
 					</div>
+
 					
 
 
@@ -394,7 +398,8 @@
 
 
 			<div id="hjs">
-			<h2>函数的价值：多次使用同一段代码可以封装成一个函数调用；并且可把不同的数据传递给他们，完成预定的操作（alert（各种参数））</h2>
+			<h3>函数的价值：多次使用同一段代码可以封装成一个函数调用；并且可把不同的数据传递给他们，完成预定的操作（alert（各种参数））</h3>
+			<hr>
 			<b>函数把结果返回给调用这个函数的语句；函数不仅能够以参数的形式就收数据，还能够返回数据 return</b><br>
 			<b>函数命名使用驼峰法，变量使用下划线用以区分。</b><br>
 			if(something!=null)与if(something)完全等价<br>
@@ -421,13 +426,15 @@
 
 					</div>
 
-					<h2>闭包</h2>
+					<h3>闭包</h3>
+					<hr>
 						闭包就是一个函数把外部不属于自己的对象也包含进来了（闭合）；<b>函数内的嵌套函数能使用自己外部的局部变量</b><br><br>						
 						<div class="after">
 							&&  ||  !   <span>与或非</span>
 
 						
-						<h2>循环语句</h2>
+						<h3>循环语句</h3>
+						<hr>
 						<b>switch 基于不同的条件来执行不同的动作</b><br>
 						switch(box){	<br>
 							case1:         <span>执行代码块1</span> <br>
@@ -463,7 +470,8 @@
 						回调函数，通常是作为参数传递给调用者，调用者并不知道自己调用的到底是什么
 						<br>
 						<div class="zhushi">
-					<h2>控制鼠标延迟触发 轮播器</h2>
+					<h3>控制鼠标延迟触发 轮播器</h3>
+					<hr>
 					
 
 					var hua=null; 		<p>设置定时器,声明一个定义为null空的变量</p>
@@ -481,6 +489,15 @@
 						}); <br>
 					} <br>
 					<b>如果在某个函数中使用了var，则被视为一个局部变量，它只存在于这个函数的上下文中。反之，如果没有使用var，则视为一个全局变量，并且如果脚本中已经存在了一个同名的全局变量，这个函数就会改变那个全局变量的值</b>
+					<hr>
+					<h3>DOM 事件处理程序</h3>
+					<hr>
+						<ul>
+							<li><span>dom 0级:</span>el.onclick=function(){}</li>
+							<li><span>dom 2级:</span>el.addEventListener("click",function(){},false)</li>
+							<li><span>ie 8-:</span>  el.attachevent("onclick",function(){})</li>
+							<li><span>兼容以上:</span>EventUtil.addHandler(el,"click",function(){})</li>
+						</ul>	
 
 					</div>
 
@@ -554,7 +571,8 @@
 
 					$.get(URL,callback);
 					<hr>
-					<h2>jquery对象与dom对象</h2>
+					<h3>jquery对象与dom对象</h3>
+					<hr>
 					juqery对象与dom对象不一样；需要转换 <br>
 					on事件委托与直接捆绑的区别：<br>
 					on方法性能更好，可以防止事件冒泡，为动态添加的元素也能绑上事件。<br>
@@ -571,7 +589,8 @@
 			</div>
 
 			<div id="hbootstrap"> <br>
-				<h2> 在父元素加入col-lg-5调整大小</h2>
+				<h3> 在父元素加入col-lg-5调整大小</h3>
+				<hr>
 					btn下拉菜单: <br>
 					input里面form-control必加<br>
 					navbar-left向左居中对齐<br>
@@ -611,7 +630,7 @@
 					支持输入验证；<br>
 					< div ng-app=""> <span>ng-app指令定义一个angular应用程序</span><br>
 						< p>名字：< input type="text" ng-model="name">< /p><span>ng-model指令把元素值（如输入域的值）绑定到应用程序(变量name)；</span><br>
-						< h2>Hellp{{name}}< /h2> <span>angularJs表达式写在双大括号内{{expression}}；</span><br>
+						< h3>Hellp{{name}}< /h3> <span>angularJs表达式写在双大括号内{{expression}}；</span><br>
 					< /div><br>
 
 
@@ -652,13 +671,16 @@
 				<hr>
 				常用指令： v-for循环遍历《li v-for="name in arr"》 {{name}}
 				<br>  v-on 绑定事件；v-onclick点击事件	
-				<br><h2>new Vue({el:"element元素 选择器",data:"数据",methods:"方法函数"})</h2>
+				<br><h3>new Vue({el:"element元素 选择器",data:"数据",methods:"方法函数"})</h3>
+				<hr>
 
 				参数：
 				一些指令能接受一个参数，在指令的后面以冒号指明。<br>
 				两个最为常用的指令缩写v-bind:href---：href && v-on:click----@click
 
-
+				<hr>
+				vm.<span>$</span>data===data    // =>true <br>
+				vm.<span>$watch</span>("data",function("newValue","oldValue"){<e>//此回调在vm.data改变后执行</e>})		
 
 
 
@@ -782,7 +804,7 @@
 					<li style="color: #666;font-size: 2rem">德鲁伊</li>
 					<li style="color: #FF6666">月火猫3/4</li>
 					<li style="color: #FF6666">咕咕猫1/4</li>
-					<li>狂野猫0/4</li>
+					<li>狂野猫2/4</li>
 					<li>残暴猫0/4</li>
 					<hr>	
 					<li style="color: #666;font-size: 2rem">DH</li>
@@ -793,6 +815,8 @@
 					
 					<li style="color: #666;font-size: 2rem">战士</li>
 					<li style="color: #FF6666">斯多姆卡1/1</li>
+					<li>圣光大剑0/1</li>
+					<li>纯洁板甲0/1</li>
 					<li>挑战盾牌0/1</li>
 					<li>獠牙肩膀0/1</li>
 					<li>高阶督军0/1</li>

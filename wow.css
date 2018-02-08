@@ -1,12 +1,39 @@
  html{
+	font-size: 62.5%;	
+ }
+ html{
 	color:#006600;
  
 }
 body{
-	font-size: 16px;
 	padding: 5px;
 	height: 999px;
 	overflow-x: hidden;
+}
+div {
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;	
+	color: #34495e;
+	font-size: 1.5rem;
+
+}
+h3:first-child{
+	margin-top: 1rem; 
+}
+
+
+
+h3{
+	color: #35495E;
+	margin-top: 10rem;
+}
+xmp{
+	background: #F3F3F3;
+	color:#018172;	
+}
+span{
+	background: #F3F3F3;
+	color: #018172;
+	font-size: 1.4rem;
 }
 #bg{
 	width: 100%;
@@ -118,11 +145,11 @@ div h2{
 	font-size: 14px;
 	margin-left: 10px;
 }
-span{
+/*span{
 	color: #ff9999;
-	font-size: 14px;
-	margin-left: 10px;
-}
+	font-size: 84px;
+	 
+}*/
 hr{
 	color: #ffcccc;
 	width: 80%;
@@ -130,6 +157,9 @@ hr{
 i{
 	display: inline-block;
 	width: 20px;
+}
+e{
+	color: #aaa;
 }
 #w{
 	width: 100px;
@@ -160,7 +190,7 @@ abbr{
 }
 
 .ul li{
-	color: #ff9999;
+	/*color: #ff9999;*/
 	font-size: 16px;
 }
 .load{
