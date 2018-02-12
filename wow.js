@@ -1,4 +1,5 @@
 $(function(){
+
    var croc = Snap.select("#crocodile"),
                 head = croc.select("#upper-head"),
                 jaw = croc.select("#upper-jaw"),
@@ -120,7 +121,7 @@ function hh(num1,num2){
 
 // alert(cym)
 
-
+//二月九号，贞儿终于答应我一起生活 
  
 
 
